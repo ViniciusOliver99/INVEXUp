@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{% static 'CSS/sstyle.css' %}">
+    <title>INVEX</title>
+    <link rel="shortcut icon" href="{% static 'imagens/favicon.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'CSS/stilo.css'%}">
     <style>
         p{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -18,7 +19,15 @@
     <ul id="menu-coin">
         <li><a href="/">Voltar &#x21A9;</a></li>
     </ul>
-    <p>Valor atual do Euro: {{eurodict}}</p>
+    <br>
+    <br>
+    <ul id="dolar">
+        <li >Diário Do Euro</li>
+        <li id="menor">Menor do dia: {{euro_low}}</li>
+        <li>Maior do dia: {{euro_higt}}</li>
+    </ul>
+    <p>Valor atual do Euro: {{euro_bid}}</p>
+    
     {% block content %}
     {% endblock %}
     <script src="{% static 'Java Script/Scripts.js'%}"></script>  

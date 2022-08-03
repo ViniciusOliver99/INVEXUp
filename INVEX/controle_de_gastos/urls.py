@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from contas.views import home, dolar, euro, bitcoin
+from contas.views import home, euro, bitcoin, dolar
 
 
 urlpatterns = [

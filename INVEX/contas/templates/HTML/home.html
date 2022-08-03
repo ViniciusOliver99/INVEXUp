@@ -6,31 +6,25 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="">
     <title>INVEX</title>
-    <link rel="stylesheet" href="{% static 'CSS/Style.css' %}">
+    <link rel="shortcut icon" href="{% static 'imagens/favicon.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'CSS/stilo.css' %}">
 </head>
 <body>
     <ul id="menu">
         <a id="img1" href="\"><img src="static/imagens/logo.png"width="55px"/></a>
-        <li></li>
         <li><a href="dolar/">Dólar &#x1F4B5;</a></li>
         <li><a href="bitcoin/">Bitcoin ₿</a></li>
         <li><a href="euro/">Euro &#x1F4B6;</a></li>
     </ul>
-    <p>.</p>
-    <p>.</p>
-    <ul id="dolar">
-        <li >Diário Do Dólar</li>
-        <li id="menor">Menor do dia: {{usddict_menor}}</li>
-        <li>Maior do dia: {{usddict}}</li>
-    </ul>
-    <div>
-        <input  id="input" type="text" name="nome" value=""
-            onfocus="javascript:(this.value=='Seu Nome'?this.value = '':null);"
-            onblur="javascript:(this.value==''?this.value = 'Seu Nome':null);" />
+    <div class="invex">
+        <div id="h1">
+        <h1>INVEX</h1>
+        <br>
+        <h2>Seu Portal de Investimentos</h2>
+        </div>
     </div>
     {% block content %}
-    {% endblock %}
-    <script src="{% static 'Java Script/Scripts.js'%}"></script>
+    {% endblock %}  
 </body>
-</html>
